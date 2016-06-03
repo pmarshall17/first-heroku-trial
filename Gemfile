@@ -6,9 +6,12 @@ gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
 gem "materialize-sass"
+gem "will_paginate", "~> 3.1.0"
 
 group :production do
 	gem 'puma'
+	#heroku gem for static assets / smooth deploys
+	gem 'rails_12factor'
 end
 
 # Use SCSS for stylesheets
